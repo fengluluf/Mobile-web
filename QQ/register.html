@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册页面</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="jquery.mobile-1.4.5/jquery-2.2.2.js"></script>
+	<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="content">
+			<h1>欢迎注册QQ</h1>
+			<h3>每一天，乐在沟通。</h3>
+			<form action="demoform.asp" method="post">
+				<div data-role="fieldcontain">
+					<label for="text1" class="ui-hidden-accessible"></label>
+					<input type="text" id="text1" placeholder="昵称">
+					<p id="xinxi" style="color:red"></p>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="text2" class="ui-hidden-accessible"></label>
+					<input type="text" id="text2" placeholder="密码">
+				</div>
+				<a data-role="button" id="btn" href=" ">立即注册</a>
+			</form>			
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('#btn').click(function(){
+			$.ajax({
+				type:'get',
+				url:'  http://datainfo.duapp.com/shopdata/userinfo.php',
+				data:{
+					status:"register",
+					userID:document.getElementById("text1").value,
+					password:document.getElementById("text2").value
+				},
+				success:function(data){
+					var p=document.getElementById("xinxi");
+					if(data==0){
+						p.innerHTML="用户名重名";
+					}
+					if(data==1){
+						window.location.href='login.html'
+					}
+				},
+				error:function(){
+					alert('error');
+				}
+			})
+		})
+	</script>
+</body>
+</html>
