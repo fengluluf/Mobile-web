@@ -1,0 +1,20 @@
+.ui-bar-c{
+	background-color: #6699CC;
+	border:0;
+	color:#fff;
+}
+img{
+	width:100%
+}
+#price{
+	color:red;
+	font-size: 2em;
+}
+#btn{
+	background-color: red;
+	color:#fff;
+}
+#btn0{
+	background-color: #F89E37;
+	color:#fff;
+}

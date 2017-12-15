@@ -1,0 +1,16 @@
+*{
+	margin:0;
+	padding:0;
+}
+#box{
+	background: url(../images/bag.jpg) no-repeat;
+	background-size:100%;
+}
+form{
+	margin-top: 10em;
+}
+p{
+	color:red;
+	background-color: #fff;
+	margin-top:0.2em;
+}

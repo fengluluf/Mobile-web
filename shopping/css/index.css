@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+}
+.wrapper01 {
+    position: relative;
+    height: 2em;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    border-bottom: 0.2em solid #ccc;
+}
+.wrapper01 .scroller {
+    position: absolute;
+}
+.wrapper01 .scroller li {
+    height: 2em;
+    color: #333;
+    float: left;
+    line-height: 2em;
+    text-align: center;
+    padding: 0 1em;
+}
+.cur {
+    border-bottom: 0.5em solid red;
+}
+#serbtn{
+	margin-top: 5%;
+}
+#swiper{
+	width:100%;
+	height:8em;
+}
+.ui-bar-c{
+	/*background-color: #6699CC;*/
+	background: linear-gradient(to right, rgba(135,206,235,1), rgba(51,136,204,1));
+	border:0;
+}
+.title{
+	color:#fff
+}
+.goodImg{
+	display:block;
+	height:8em;
+	width:100%;
+}
+.goodList{
+	float:left;
+	width:33%;
+}
+.goodList p{
+	text-align: center;
+}
+#back{
+	background-color:red;
+	border: none;
+	color: white;
+	margin: 6em 5%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1rem;
+	border-radius: 0.3rem;    	
+	width: 80%;
+}
+#back:hover {
+	box-shadow: 0 0.12em 0.16em 0 rgba(0,0,0,0.24), 0 0.17em 0.5em 0 rgba(0,0,0,0.19);
+}
+#back a{
+	text-decoration: none;
+	color:#fff;
+}
+#checkbtn{
+	float: right;
+	display: block;
+}
+#checkbtn{
+	float: right;
+	display: block;
+}
+.checkimg{
+	float: left;
+	width:5em;
+	height:5em;
+	overflow:hidden;
+}
+.good{
+	width: 100%;
+	height:100%;
+}
+.checkname{
+    font-size:1em;
+}
+.checkprice{
+	font-size:0.9em;
+	margin-top:2em;
+	color:red;
+}
+#checkul li input{
+	margin-top:1em;
+	margin-left:-1em
+}
+#price{
+	font-size:0.9em;
+}
+#priceall{
+	color:red;
+}
+#num{
+	font-size:0.9em;
+	float: right;
+	margin-right:2em;
+	width: 1em;
+}
+.ui-icon-de:after{
+	background:url('../images/delete.png') no-repeat ;
+	background-size: 18px 18px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>商品详情</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/detail.css" />
+	<script src="js/jquery-2.2.2.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header" data-theme='c' data-position="fixed">
+			<a href='index.html' rel="external" data-role='button'>返回</a>
+			<h1>商品详情</h1>
+		</div>
+		<div data-role="content" id='all'>
+			<img src="" id='imga'>
+			<p id="name">商品名称</p>
+			<p id='price' style="display: inline;">价格</p>	
+			<p id='buynumber' style="display: inline;margin-left: 8em;"></p>
+			<table>
+				<tr>
+					<td><label for="text">购买数量：</label></td>
+					<td><a data-role='button' id="sub">-</a></td>
+					<td style="width:50px"><input type="number" id='text' style="display:inline" value=0></td>
+					<td><a data-role='button' id='add'>+</a></td>
+					<td><p id="xinxi" style="color:red"></p></td>
+				</tr>
+			</table>		
+			<div data-role="collapsible">
+				<h1>产品参数</h1>
+				<p id='detail'></p>
+			</div>
+			
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme='c' data-tap-toggle="false">
+			<div data-role="navbar">
+				<ul>
+					<li><button id="btn0" data-inline='true'>收藏</button></li>
+					<li><button id="btn" data-inline='true'>加入购物车</button></li>
+				</ul>
+			</div>			
+		</div>
+	</div>
+	<script src='js/detail.js'></script>
+</body>
+</html>
